@@ -1,0 +1,22 @@
+{
+  "name": "calculator-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apatriz/the-calc.git"
+  },
+  "author": "Alec Patrizio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apatriz/the-calc/issues"
+  },
+  "homepage": "https://github.com/apatriz/the-calc#readme",
+  "devDependencies": {
+    "http-server": "^13.0.1"
+  }
+}
