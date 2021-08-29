@@ -10,17 +10,89 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url("https://fonts.googleapis.com/css?family=Spartan");
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    body{
+      height:100%;
+      width:100%;
+      background-color: hsl(222, 26%, 31%);
+      font-family: Spartan, Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      color: white;
+    }
+
+    .calc{
+      width: 400px;
+      height: 400px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .calc__header{
+      display:flex;
+    }
+
+    .calc__header > *{
+      flex:1;
+      padding:3px;
+
+    }
+    .calc__header > h1{
+      font-size: 1rem;
+      margin:0;
+      padding:0;
+      display:inline;
+    }
+    .calc__result > div {
+      background-color: hsl(224, 36%, 15%);
+      border: 1px solid transparent;
+      border-radius: 7px;
+      height:75px;
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .calc__result > div > span{
+      padding:5px 20px 5px 0;
+      font-size: 1.5rem;
+    }
+
   </style>
 </head>
 <body>
 
-
+  <div class="calc">
+    <section class="calc__header">
+      <h1>calc</h1>
+      <div class="theme-selector">
+          <span>THEME</span>
+          <label class="theme-selector__input-container">123<input id="theme-selector__input" type="hidden" name="theme" value="1"/></label>     
+      </div>     
+    </section>
+    <section class="calc__result">
+      <div><span>300,313</span></div>
+    </section>
+    <section class="calc__buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>DEL</button>
+    </section>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Alec Patrizio</a>.
   </div>
 </body>
 </html>
